@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #05051F;
+}
+
+main {
+    position: relative;
+    width: 360px;
+    min-height: 550px;
+    margin: 50px auto 0;
+}
+
+img {
+    display: block;
+    width: 100px;
+    border: 2px solid #e6e6e6;
+    border-radius: 50%;
+    margin: auto;
+}
+
+#links {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+    gap: 16px;
+    list-style: none;
+}
+
+#links li {
+    border: 1px solid #e6e6e6;
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #6b6b6b3f;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+#links li:hover {
+    background-color: #6b6b6b80;
+    border: 1px solid #c2c2c2;
+}
+
+#links li:active {
+    background-color: #6b6b6b3f;
+    border: 1px solid #e6e6e6;
+}
+
+#links li a {
+    text-decoration: none;
+}
+
+.nome-perfil {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.img-dark, .img-light {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+.img-dark {
+    background: url('images/background-padrao-1.jpg') no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 200px;
+    height: 300px;
+    z-index: -1;
+}
+
+.img-light {
+    background: url('images/background-light-1.jpg') no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
